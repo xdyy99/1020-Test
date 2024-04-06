@@ -1,19 +1,25 @@
 import styles from './Product.module.scss'
 
+import TextAnimate from '../TextAnimate'
 import SliderCurve from '../SliderCurve'
 
 import { CONTENTS, SLIDES } from './CONSTANTS'
 
 
 export default function Hero() {
+
   return (
     <section className={styles.product}>
       <div className={styles.content}>
         <h2 className={styles.title}>
-          {CONTENTS.title}
+          <TextAnimate >
+            {CONTENTS.title}
+          </TextAnimate>
         </h2>
         <div className={styles.text}>
-          {CONTENTS.paragraph}
+          <TextAnimate delay={0.05}>
+            {CONTENTS.paragraph}
+          </TextAnimate>
         </div>
       </div>
 

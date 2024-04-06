@@ -1,0 +1,15 @@
+.wrap{
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.inner{
+  display: inline-block;
+  transform: translateY(100%);
+  transition: 0.5s ease-out;
+}
+.active{
+  .inner{
+    transform: translateY(0);
+  }
+}
