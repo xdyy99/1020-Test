@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
+  plugins: [react(
+    {
       include: '**/*.{js,jsx}',
-    }),
-  ],
+    }
+  )],
   base: '',
   root: './src',
   publicDir: '../public',
@@ -15,9 +15,9 @@ export default defineConfig({
     outDir: '../dist',
   },
   server: {
-    port: 8080,
+    port: 8080
   },
   preview: {
-    port: 8080,
-  },
+    port: 8080
+  }
 })
