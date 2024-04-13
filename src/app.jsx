@@ -1,22 +1,14 @@
-import ReactDOM from "react-dom/client";
+import ReactDOM from 'react-dom/client'
 import './app.scss'
 
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Product from './components/Product';
+// Import components
+import Slider from './components/Slider'
+// Import data
+import TEAM from './constant'
 
 const App = () => {
-
-  return (
-    <div>
-      <Navbar />
-
-      <Hero />
-      
-      <Product />
-    </div>
-  )
+  return <Slider slides={TEAM} />
 }
 
-const root = ReactDOM.createRoot(document.getElementById("app"));
-root.render(<App />);
+const root = ReactDOM.createRoot(document.getElementById('app'))
+root.render(<App />)
